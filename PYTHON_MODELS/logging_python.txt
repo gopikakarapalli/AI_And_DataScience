@@ -1,0 +1,30 @@
+ERROR:root:error message Tue Nov 27 15:37:48 2018
+CRITICAL:root:critical message Tue Nov 27 15:37:48 2018
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "E:/My Learning/Computers & Programming/Python/Mypython/Python Scripts/loggingFile_python.py", line 44, in <module>
+    print(x/y)
+ZeroDivisionError: division by zero
+ERROR:root:error message Tue Nov 27 15:38:41 2018
+CRITICAL:root:critical message Tue Nov 27 15:38:41 2018
+ERROR:root:division by zero
+Traceback (most recent call last):
+  File "E:/My Learning/Computers & Programming/Python/Mypython/Python Scripts/loggingFile_python.py", line 44, in <module>
+    print(x/y)
+ZeroDivisionError: division by zero
+ERROR:root:error message Tue Nov 27 15:41:09 2018
+CRITICAL:root:critical message Tue Nov 27 15:41:09 2018
+ERROR:root:invalid literal for int() with base 10: 'R4'
+Traceback (most recent call last):
+  File "E:/My Learning/Computers & Programming/Python/Mypython/Python Scripts/loggingFile_python.py", line 43, in <module>
+    y=int(input("enter second number"))
+ValueError: invalid literal for int() with base 10: 'R4'
+ERROR:root:error message Tue Nov 27 15:43:50 2018
+CRITICAL:root:critical message Tue Nov 27 15:43:50 2018
+ERROR:root:error message Tue Nov 27 15:44:11 2018
+CRITICAL:root:critical message Tue Nov 27 15:44:11 2018
+ERROR:root:invalid literal for int() with base 10: 'yy'
+Traceback (most recent call last):
+  File "E:/My Learning/Computers & Programming/Python/Mypython/Python Scripts/loggingFile_python.py", line 43, in <module>
+    y=int(input("enter second number"))
+ValueError: invalid literal for int() with base 10: 'yy'
