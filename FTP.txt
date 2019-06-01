@@ -1,0 +1,54 @@
+How to connect to an FTP/sftp/ssh server and download files ?
+win:
+---
+ftp://127.0.0.1
+install : winscp pakeg
+open :winscpdef 
+
+python 
+------
+from ftplib import FTP
+ftp =FTP('host name')
+ftp.login(user='username',passwd = 'password')
+ftp.cwd('/specifidommain)
+
+def gradfile():
+	filename = ' file name'
+	localfile =open(filename,'wd')
+	ftp.retrbinary('retr'+filename,localfile.write,1024)
+	ftp.quit()
+	localfile.close()
+
+def placefile():
+	filename = ' file name'
+	ftp. storbinary('stor'+filename,open(filename, 'rd'))
+
+ linux:
+-------
+$ftp hostname
+   user name:
+   password:
+ftp> work all linux commends
+ftp> prompt off
+ftp>mget *.txt #to download
+ftp>put filename #load file
+ftp>rename filename
+ftp>deleted filename
+ftp>bye exit to the ftp
+
+ssh root@host
+------------
+
+sftp root@host
+pw:
+sftp> work all linux commends
+sftp> get filename
+sftp> mget filename
+sftp>put filename
+sftp>mput filename
+
+
+
+
+
+
