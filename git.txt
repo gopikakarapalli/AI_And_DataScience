@@ -1,0 +1,13 @@
+get Up Git:
+git config --global user.name "--------------"
+git config --global user.email "----------------"
+
+other commands
+git clone (url)
+git add (file names)
+git commit -m "(committed message)
+git config pull.rebase true
+git push -u origin master
+git remote add origin master (url)
+
+ git pull --rebase origin -----
