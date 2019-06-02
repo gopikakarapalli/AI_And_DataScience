@@ -1,0 +1,84 @@
+Configure the update manager.
+Install Drivers
+Install Synaptic package manager
+Install additional codecs, MS fonts, flash and a few more useful packages.
+Install Microcode
+Activate Minimize to dock.
+Decrease Swap Use
+Enable Drive Cache
+Reduce SSD Writes
+Set up firewall
+Configure Ubuntu settings
+Move apps button to top
+Install Gnome tweak tool
+Install Gnome Extensions
+Install Arc menu  --> to get slider menu
+Install additional themes
+Change Firefox settings (open last closed tabs, add search field)
+Enable Netflix Support in Firefox
+Tweak LibreOffice
+Enable Google Drive integration
+Schedule Backups
+Remove unnecessary software
+Turn Off Startup Applications
+Clean system (Bleachbit)
+Install VLC
+Install Google Chrome
+Install Dropbox
+Install Skype
+Install Spotify
+Laptop Tweaks
+
+step :1
+*******
+update & upgrade :
+-----------------
+sudo apt update && sudo apt get upgrade -y  (or)
+sudo apt-get update
+sudo apt get upgrade  ( or )  sudo apt-get dist-upgrade
+
+step 2:
+******
+Enable Repositories:
+--------------------
+go to softwaver & updates -->other software
+select can partnes
+
+media files :  sudo apt install ubuntu-restricted-extras
+-------------
+Enable DVD support:install liddvd-pkg  and copy and past the comment "sudo dpkg-reconfigure libdvd-pkg"
+-----------------
+changing themes and icon: sudo apt indtall gnome-tweak-tool 
+-------------------------
+             gnome extensions : sudo apt install chrome-gnome-shell
+batter overheting : sudo apt install tlp tlp-rdw
+-----------------   sudo tlp start
+
+
+Enable Minimize on clicK :gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
+------------------------- gsettings reset org.gnome.shell.extensions.dash-to-dock click-action
+                          gsettings set org.gnome.desktop.wm.preferences button-layout ':close,maximize,minimize' 
+
+to change icon tab:  open dconf editor --> /org/gnom/shell/extension/dash-to-dock/ and turn on show-apps-at-top
+-------------------
+getting software:
+-----------------
+download software from the wed : ---
+
+enable flatpak support : sudo apt install flatpak
+                         sudo apt install gnome-soetware-plugin-flatpak
+
+
+
+system maintenance:
+
+clean up your system: sudo apt autoremove
+
+
+
+
+https://www.youtube.com/watch?v=BLVtxpm5c2A&t=160s
+
+
+
+
