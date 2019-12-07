@@ -1,0 +1,26 @@
+<annotation>
+	<folder>image</folder>
+	<filename>pix 26-03-2012.JPG</filename>
+	<path>C:\Users\Gopi\Documents\TensorFlow Object Detection API\image\pix 26-03-2012.JPG</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>800</width>
+		<height>1000</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>GOPI</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>189</xmin>
+			<ymin>62</ymin>
+			<xmax>584</xmax>
+			<ymax>539</ymax>
+		</bndbox>
+	</object>
+</annotation>
