@@ -1,0 +1,56 @@
+elasticsearch:
+==============
+Create Index:
+-------------
+PUT twitter
+{
+    "settings" : {
+        "index" : {
+            "number_of_shards" : 3, 
+            "number_of_replicas" : 2 
+        }
+    }
+}
+Create Index and map:
+--------------------
+PUT test
+{
+    "settings" : {
+        "number_of_shards" : 1
+    },
+    "mappings" : {
+        "_doc" : {
+            "properties" : {
+                "field1" : { "type" : "text" }
+            }
+        }
+    }
+}
+
+
+post or put data:
+-------------------
+POST /<INDEX_NAME>/<TYPE_NAME>
+{
+    "field": "value",
+    "id": 1,
+    "account_id": 213,
+    "name": "kimchy"
+}
+
+Aliases:
+--------
+PUT test
+{
+    "aliases" : {
+        "alias_1" : {},
+        "alias_2" : {
+            "filter" : {
+                "term" : {"user" : "kimchy" }
+            },
+            "routing" : "kimchy"
+        }
+    }
+}
+
+
